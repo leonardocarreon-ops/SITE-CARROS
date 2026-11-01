@@ -1,0 +1,167 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101010;
+    color: white;
+}
+
+header {
+    background-color: #181818;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 3px solid #e50914;
+}
+
+header h1 {
+    font-size: 35px;
+    color: #e50914;
+}
+
+header p {
+    margin-top: 8px;
+    color: #ccc;
+}
+
+nav {
+    background-color: #222;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e50914;
+}
+
+.banner {
+    text-align: center;
+    padding: 75px 20px;
+    background: linear-gradient(90deg, #151515, #383838);
+}
+
+.banner h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    color: #ccc;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 30px;
+    color: #e50914;
+}
+
+.carros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: #202020;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #383838;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #e50914;
+}
+
+.imagem {
+    height: 170px;
+    background: linear-gradient(135deg, #393939, #111);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 65px;
+}
+
+.card-conteudo {
+    padding: 22px;
+}
+
+.card h3 {
+    color: #e50914;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #ccc;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.potencia {
+    color: white;
+    font-weight: bold;
+}
+
+.sobre {
+    background-color: #202020;
+    padding: 35px;
+    border-radius: 12px;
+    margin-top: 40px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+footer {
+    background-color: #181818;
+    padding: 25px;
+    text-align: center;
+    margin-top: 40px;
+    color: #aaa;
+    border-top: 3px solid #e50914;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .banner h2 {
+        font-size: 28px;
+    }
+}
+.imagem {
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
